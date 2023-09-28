@@ -9,7 +9,7 @@ Our project is a hack n slash type of roguelike game. We are thinking of making 
 - [Mateo Vrooman](https://github.com/MateoVrooman/CIS350-HW2-Vrooman)
 - [Kyle Fink](https://github.com/BoxMcNugget/CIS350-HW2-Fink)
 - [Alex Hines](https://github.com/h1nes4l/CIS350-HW2-Hines)
-- Member 4 (Role 7, Role 8)
+- Tristan Ingram-Reeve (Role 7, Role 8)
 
 ## Prerequisites
 
