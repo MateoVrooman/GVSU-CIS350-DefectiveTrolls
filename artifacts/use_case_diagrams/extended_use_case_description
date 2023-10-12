@@ -1,0 +1,8 @@
+Use Case: Player Item Interaction
+
+Actors: Player character and Item
+
+Description: When the player character enters the same tile as the item the item is added to the player inventory. From within the inventory, the player can use the item if it is a consumable.
+
+Cross Reference: SRS 6.2 and 6.3
+
