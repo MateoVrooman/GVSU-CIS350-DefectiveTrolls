@@ -15,16 +15,13 @@ run/main_scene="res://Scenes/World.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-Util="*res://Util.gd"
-
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/window_width_override=1920
 window/size/window_height_override=1080
+window/energy_saving/keep_screen_on.editor=true
 window/stretch/mode="canvas_items"
 
 [input]
