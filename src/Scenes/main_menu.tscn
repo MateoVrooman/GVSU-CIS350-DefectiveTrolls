@@ -67,8 +67,12 @@ theme_override_font_sizes/font_size = 32
 shortcut_feedback = false
 text = "Exit"
 
-[node name="Label" type="Label" parent="VBoxContainer"]
+[node name="Label" type="Label" parent="."]
 layout_mode = 2
+offset_top = 302.0
+offset_right = 1920.0
+offset_bottom = 350.0
+size_flags_vertical = 1
 text = "Defective Trolls Rogue-Like"
 label_settings = SubResource("LabelSettings_alukl")
 horizontal_alignment = 1
