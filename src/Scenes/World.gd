@@ -6,13 +6,14 @@ const BOUNDS = Rect2(0, 0, MAP_W, MAP_H)
 
 var density = 46
 
-@onready var tilemap = $TileMap
+#@onready var tilemap = $TileMap
 
 func _ready():
 	randomize()
 	generate_map()
 
 func generate_map():
+	var tilemap = $TileMap
 	var grid = make_noise_grid()
 	grid = cellular_automaton(grid, 15)
 	grid = clean_edges(grid)
@@ -20,11 +21,14 @@ func generate_map():
 	tilemap.set_cells_terrain_connect(0, tiles, 0, 0)
 	# fill_background(grid)
 
+"""
 func fill_background(grid):
 	for x in range(MAP_W):
 		for y in range(MAP_H):
 			if grid[x][y] == 0:
 				tilemap.set_cell(0, Vector2(x, y), 2, Vector2(0, 2), 0)
+"""
+
 
 func grid_to_tiles(grid):
 	var tiles = []

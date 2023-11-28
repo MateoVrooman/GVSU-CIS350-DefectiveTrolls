@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4bdx7o3ql6l6"]
+[gd_scene load_steps=4 format=3 uid="uid://m3xcrkkmdig2"]
 
+[ext_resource type="Script" path="res://Scenes/main_menu.gd" id="1_3qaa7"]
 [ext_resource type="Texture2D" uid="uid://evooay4udvl3" path="res://art/Background/1 Backgrounds/1/Night/3.png" id="1_bucvg"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_alukl"]
+font_size = 32
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -9,21 +13,29 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_3qaa7")
 
 [node name="Background" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_bucvg")
 stretch_mode = 6
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
 
 [node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/CenterContainer"]
 layout_mode = 2
@@ -33,12 +45,34 @@ layout_mode = 2
 
 [node name="Play" type="Button" parent="VBoxContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 32
+shortcut_feedback = false
+text = "Play"
 
 [node name="Controls" type="Button" parent="VBoxContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 32
+shortcut_feedback = false
+text = "Controls"
 
 [node name="Exit" type="Button" parent="VBoxContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 32
+shortcut_feedback = false
+text = "Exit"
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
+text = "Defective Trolls Rogue-Like"
+label_settings = SubResource("LabelSettings_alukl")
+horizontal_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/CenterContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/CenterContainer/VBoxContainer/Controls" to="." method="_on_controls_pressed"]
+[connection signal="pressed" from="VBoxContainer/CenterContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
