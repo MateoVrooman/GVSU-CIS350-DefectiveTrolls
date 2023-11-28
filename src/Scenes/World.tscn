@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://li61520igyu"]
+[gd_scene load_steps=11 format=3 uid="uid://li61520igyu"]
 
 [ext_resource type="Script" path="res://Scenes/World.gd" id="1_bw3gp"]
 [ext_resource type="Texture2D" uid="uid://c7wg0ivaygwr8" path="res://art/Itch release tileset base 01.png" id="1_phqt7"]
 [ext_resource type="PackedScene" uid="uid://c0ie7iphymwhi" path="res://Player/player.tscn" id="2_xc6mv"]
 [ext_resource type="Texture2D" uid="uid://dpu3u0xogeu40" path="res://art/TileSet v1.0.png" id="4_s2v2n"]
+[ext_resource type="PackedScene" uid="uid://diwwxf33i84ho" path="res://enemy1/enemy.tscn" id="5_612m3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1raqc"]
 texture = ExtResource("4_s2v2n")
@@ -1276,6 +1277,9 @@ sources/2 = SubResource("TileSetAtlasSource_e8cv2")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4dtnb"]
 size = Vector2(10.4167, 18.4426)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lyxnw"]
+size = Vector2(11, 5)
+
 [node name="World" type="Node2D"]
 script = ExtResource("1_bw3gp")
 
@@ -1285,12 +1289,20 @@ collision_animatable = true
 format = 2
 
 [node name="Player" parent="." instance=ExtResource("2_xc6mv")]
-position = Vector2(79, 62)
+position = Vector2(333, 186)
 scale = Vector2(2.88, 2.44)
-speed = 800
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Player"]
-position = Vector2(0, -9.22131)
+position = Vector2(0.347221, -9.83607)
 shape = SubResource("RectangleShape2D_4dtnb")
+
+[node name="enemy" parent="." instance=ExtResource("5_612m3")]
+position = Vector2(199, 113)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="enemy"]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(0, 9.5)
+shape = SubResource("RectangleShape2D_lyxnw")

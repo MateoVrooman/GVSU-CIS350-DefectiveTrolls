@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed: int = 35
+@export var speed: int = 100
 @onready var animations = $AnimationPlayer
 @onready var walkUpSprite = $walkUp
 @onready var walkDownSprite = $walkDown
@@ -8,6 +8,7 @@ extends CharacterBody2D
 @onready var walkLeftSprite = $walkLeft
 @onready var idleSprite = $Idle
 @onready var attackSprite = $Attack
+
 
 var direction = "Down"
 var attacking: bool = false
