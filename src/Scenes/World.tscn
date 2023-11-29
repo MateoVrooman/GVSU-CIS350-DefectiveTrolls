@@ -1289,17 +1289,17 @@ collision_animatable = true
 format = 2
 
 [node name="Player" parent="." instance=ExtResource("2_xc6mv")]
-position = Vector2(333, 186)
+position = Vector2(645, 363)
 scale = Vector2(2.88, 2.44)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Player"]
-position = Vector2(0.347221, -9.83607)
+position = Vector2(-8.01682e-06, -9.83606)
 shape = SubResource("RectangleShape2D_4dtnb")
 
 [node name="enemy" parent="." instance=ExtResource("5_612m3")]
-position = Vector2(199, 113)
+position = Vector2(372, 257)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="enemy"]
 light_mask = 3
