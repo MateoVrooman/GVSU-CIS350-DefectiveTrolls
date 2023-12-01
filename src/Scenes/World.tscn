@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dpu3u0xogeu40" path="res://art/TileSet v1.0.png" id="4_s2v2n"]
 [ext_resource type="PackedScene" uid="uid://diwwxf33i84ho" path="res://enemy1/enemy.tscn" id="5_612m3"]
 [ext_resource type="Script" path="res://Scenes/CanvasLayer.gd" id="6_5gwrm"]
-[ext_resource type="PackedScene" uid="uid://dnhsdutigkkow" path="res://Scenes/inventory_gui.tscn" id="6_m2ssp"]
+[ext_resource type="PackedScene" path="res://Scenes/inventory_gui.tscn" id="6_m2ssp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1raqc"]
 texture = ExtResource("4_s2v2n")
