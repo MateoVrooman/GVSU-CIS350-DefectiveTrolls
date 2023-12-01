@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Inventory" load_steps=5 format=3 uid="uid://tustbjnnxt8d"]
+
+[ext_resource type="Resource" uid="uid://iesm15f3a6ou" path="res://Inventory/Items/Heart.tres" id="1_ek2vg"]
+[ext_resource type="Resource" uid="uid://dpnjdu7yv6jhj" path="res://Inventory/Items/Armor.tres" id="2_v22lb"]
+[ext_resource type="Script" path="res://Inventory/Inventory.gd" id="3_h2qbf"]
+[ext_resource type="Resource" uid="uid://beetpimdxo3in" path="res://Inventory/Items/EXP.tres" id="3_hrqim"]
+
+[resource]
+script = ExtResource("3_h2qbf")
+items = Array[Resource("res://Inventory/InventoryItem.gd")]([ExtResource("1_ek2vg"), ExtResource("2_v22lb"), ExtResource("2_v22lb"), ExtResource("3_hrqim"), ExtResource("1_ek2vg"), null, ExtResource("1_ek2vg"), ExtResource("3_hrqim"), null, ExtResource("3_hrqim"), null, ExtResource("1_ek2vg"), ExtResource("3_hrqim"), ExtResource("2_v22lb"), null, ExtResource("1_ek2vg"), ExtResource("3_hrqim"), ExtResource("2_v22lb"), ExtResource("1_ek2vg"), ExtResource("3_hrqim"), null, ExtResource("3_hrqim"), ExtResource("3_hrqim"), null])

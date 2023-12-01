@@ -95,3 +95,11 @@ func make_noise_grid():
 				noise_grid[x].append(0)
 	return noise_grid
 
+
+
+func _on_inventory_gui_closed():
+	get_tree().paused = false
+
+
+func _on_inventory_gui_opened():
+	get_tree().paused = true

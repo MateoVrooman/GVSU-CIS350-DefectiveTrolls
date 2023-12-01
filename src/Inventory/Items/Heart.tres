@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://iesm15f3a6ou"]
+
+[ext_resource type="Script" path="res://Inventory/InventoryItem.gd" id="1_jjiiv"]
+[ext_resource type="Texture2D" uid="uid://go6nwiqhcwhj" path="res://art/Inventory/HP Icon.png" id="2_pgxcg"]
+
+[resource]
+script = ExtResource("1_jjiiv")
+name = "Heart"
+texture = ExtResource("2_pgxcg")

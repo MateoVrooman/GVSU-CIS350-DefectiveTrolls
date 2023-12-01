@@ -9,6 +9,8 @@ extends CharacterBody2D
 @onready var idleSprite = $Idle
 @onready var attackSprite = $Attack
 
+@export var inventory: Inventory
+
 var enemyInAttackRange = false
 var enemyAttackCooldown = true 
 var health = 100
