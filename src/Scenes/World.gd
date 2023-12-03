@@ -8,6 +8,8 @@ var density = 46
 
 #@onready var tilemap = $TileMap
 @onready var player = $Player
+@onready var enemy_scene = preload('res://enemy1/enemy.tscn')
+@onready var spawned_enemies = $Spawned_Enemies
 
 func _ready():
 	randomize()
@@ -22,7 +24,8 @@ func generate_map():
 	# find spawn points
 	var spawns = find_spawns(grid)
 	# print(spawns)
-	spawn_player(spawns)
+	spawns = spawn_player(spawns)
+	spawns = spawn_enemies(spawns)
 	var tiles = grid_to_tiles(grid)
 	tilemap.set_cells_terrain_connect(0, tiles, 0, 0)
 	fill_background(grid)
@@ -118,8 +121,20 @@ func find_spawns(grid):
 
 func spawn_player(spawns):
 	spawns.shuffle()
-	var spawn_point = spawns[0]
+	var spawn_point = spawns.pop_front()
 	player.position = Vector2(spawn_point[0] * 32, spawn_point[1] * 32)
+	return spawns
+
+func spawn_enemies(spawns):
+	spawns.shuffle()
+	for i in range(10):
+		var spawn_point = spawns.pop_front()
+		var enemy = enemy_scene.instantiate()
+		enemy.position = Vector2(spawn_point[0] * 32, spawn_point[1] * 32)
+		spawned_enemies.add_child(enemy)
+	return spawns
+
+
 
 func _on_inventory_gui_closed():
 	get_tree().paused = false
