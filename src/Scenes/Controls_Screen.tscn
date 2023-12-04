@@ -38,7 +38,9 @@ D - Move Character Right
 
 Space Bar - Attack
 
-I - Show inventory"
+I - Show inventory
+
+F8 - Exit the Game"
 
 [node name="BackButton" type="Button" parent="VBoxContainer/CenterContainer/VBoxContainer"]
 layout_mode = 2
