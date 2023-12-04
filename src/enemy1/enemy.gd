@@ -18,7 +18,7 @@ func _physics_process(delta):
 		enemyTakeDamage()
 		updateHealth()
 		
-		if player_chase:
+		if player_chase and player:
 			position += (player.position - position)/speed
 			$AnimatedSprite2D.play("walk")
 			
