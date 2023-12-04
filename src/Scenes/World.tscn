@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://Scenes/World.gd" id="1_bw3gp"]
 [ext_resource type="Texture2D" uid="uid://c7wg0ivaygwr8" path="res://art/Itch release tileset base 01.png" id="1_phqt7"]
-[ext_resource type="PackedScene" path="res://Scenes/heart.tscn" id="2_u3452"]
+[ext_resource type="PackedScene" uid="uid://dxt5ysmdhqa5w" path="res://Scenes/heart.tscn" id="2_u3452"]
 [ext_resource type="PackedScene" uid="uid://c0ie7iphymwhi" path="res://Player/player.tscn" id="2_xc6mv"]
 [ext_resource type="Texture2D" uid="uid://dpu3u0xogeu40" path="res://art/TileSet v1.0.png" id="4_s2v2n"]
 [ext_resource type="PackedScene" uid="uid://diwwxf33i84ho" path="res://enemy1/enemy.tscn" id="5_612m3"]
 [ext_resource type="Script" path="res://Scenes/CanvasLayer.gd" id="6_5gwrm"]
-[ext_resource type="PackedScene" path="res://Inventory/inventory_gui.tscn" id="6_m2ssp"]
+[ext_resource type="PackedScene" uid="uid://b63i163j2555e" path="res://Inventory/inventory_gui.tscn" id="6_m2ssp"]
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_tobhd"]
 resource_name = "collectable"
@@ -1337,3 +1337,6 @@ grow_vertical = 2
 [node name="Spawned_Enemies" type="Node2D" parent="."]
 
 [node name="Spawned_Items" type="Node2D" parent="."]
+
+[connection signal="closed" from="CanvasLayer/InventoryGUI" to="." method="_on_inventory_gui_closed"]
+[connection signal="opened" from="CanvasLayer/InventoryGUI" to="." method="_on_inventory_gui_opened"]
