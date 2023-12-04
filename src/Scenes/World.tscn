@@ -1338,5 +1338,13 @@ grow_vertical = 2
 
 [node name="Spawned_Items" type="Node2D" parent="."]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+z_index = -6
+offset_left = -1415.0
+offset_top = -1054.0
+offset_right = 8188.0
+offset_bottom = 5360.0
+color = Color(0, 0, 0, 1)
+
 [connection signal="closed" from="CanvasLayer/InventoryGUI" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/InventoryGUI" to="." method="_on_inventory_gui_opened"]
