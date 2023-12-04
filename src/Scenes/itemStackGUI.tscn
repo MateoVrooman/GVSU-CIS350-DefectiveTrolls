@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://v8ld6v3b8mma"]
+
+[node name="Panel" type="Panel"]
+
+[node name="item" type="Sprite2D" parent="."]
+scale = Vector2(0.25, 0.25)

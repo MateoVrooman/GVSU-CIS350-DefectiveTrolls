@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://dxt5ysmdhqa5w"]
+
+[ext_resource type="PackedScene" uid="uid://cjx0jn5xpwdie" path="res://Scenes/collectable.tscn" id="1_sc0tn"]
+[ext_resource type="Resource" uid="uid://iesm15f3a6ou" path="res://Inventory/Items/Heart.tres" id="2_0nirm"]
+[ext_resource type="Texture2D" uid="uid://go6nwiqhcwhj" path="res://art/Inventory/HP Icon.png" id="2_v6qda"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3lyuu"]
+resource_local_to_scene = true
+size = Vector2(14, 14)
+
+[node name="Heart" instance=ExtResource("1_sc0tn")]
+itemRes = ExtResource("2_0nirm")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_3lyuu")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_v6qda")

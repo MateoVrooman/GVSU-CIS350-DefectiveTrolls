@@ -98,6 +98,10 @@ func _on_player_hitbox_body_entered(body):
 func _on_player_hitbox_body_exited(body):
 	if body.has_method("enemy"):
 		enemyInAttackRange = false
+		
+func collect_item(body):
+	if body.name == "player":
+		body.collect(inventory)
 
 func enemyAttack():
 	if enemyInAttackRange and enemyAttackCooldown == true:
