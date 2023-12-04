@@ -81,7 +81,7 @@ func _physics_process(delta):
 		playerAlive = false
 		health = 0
 		print("player has been killed")
-		self.queue_free()
+		get_tree().change_scene_to_file("res://Scenes/gameover.tscn")
 
 
 func _on_animation_player_animation_finished(animation):
