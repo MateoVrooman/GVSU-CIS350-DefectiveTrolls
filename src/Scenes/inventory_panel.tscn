@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://da858xsn01psr"]
+[gd_scene load_steps=3 format=3 uid="uid://b2omcb3wxx24c"]
 
 [ext_resource type="Script" path="res://Inventory/inventory_panel.gd" id="1_3s68b"]
 [ext_resource type="Texture2D" uid="uid://c4vbp1k44y14y" path="res://art/Inventory/Inventory Cell.png" id="1_nct4d"]
