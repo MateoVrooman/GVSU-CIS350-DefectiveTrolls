@@ -1303,6 +1303,7 @@ position = Vector2(645, 363)
 scale = Vector2(2.88, 2.44)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2, 2)
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Player"]
 position = Vector2(-8.01682e-06, -9.83606)

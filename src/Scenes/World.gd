@@ -131,7 +131,7 @@ func spawn_player(spawns):
 
 func spawn_enemies(spawns):
 	spawns.shuffle()
-	for i in range(10):
+	for i in range(15):
 		var spawn_point = spawns.pop_front()
 		var enemy = enemy_scene.instantiate()
 		enemy.position = Vector2(spawn_point[0] * 32, spawn_point[1] * 32)
