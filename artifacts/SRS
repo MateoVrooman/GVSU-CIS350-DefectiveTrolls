@@ -2,11 +2,9 @@ Game requirements:
  
 1.      GUI
 1.1.   The background for the start screen shall be dungeon png (simple color) or (Blurry preview of map)
-1.2.   When the user loads the website, the game shall give “Start,” “Controls,” and “Credits” button options to the user.
+1.2.   When the user loads the website, the game shall give “Start,” “Controls,” and “Exit” button options to the user.
 1.2.1. When the “controls” button is pressed the game shall open a separate popup window.
 1.2.1.1.            The controls GUI shall display the controls for the game in text format.
-1.2.2. When the “credits” button is pressed the game shall open a separate popup window.
-1.2.2.1.            The credits GUI shall display all the group members names (and possibly the class the game was for)
 1.2.3. The game shall start when the user presses the “start button”
 ------------------------------------------------------------------------------------------------------------------------------------------
 2.      Player
@@ -19,43 +17,23 @@ Game requirements:
 2.6.1. The inventory GUI should be a different color from the background (possibly slightly transparent)
 2.6.2. The Inventory shall show all the items the user has picked up (Icons or List of items).
 2.6.3. The inventory shall show the quantity of the items the user has in their inventory.
-2.6.4. The inventory screen shall show the player’s level.
-2.6.5. The inventory screen shall show the player’s XP bar.
-2.7.   When the player presses (F or E or Space), the player shall attack in that direction.
-
------------------------------------------------------------------------------------------------------------------------------------------
-3.      Friendly NPCs
-3.1.   The NPCs shall spawn randomly throughout the map.
-3.2.   The NPCs shall move randomly one block at a time throughout the map.
-3.3.   The player shall be able to talk/trade with the NPC.
-3.4.   The NPCs shall be able to give the player items after a trade (or possibly for quests).
-3.5.   The NPCs shall be able to trade with the player.
-3.6.   The player shall be able to give the NPC the required item for trading.
-3.7.   The NPC shall be able to give quests to the player.
-3.8.   The NPC shall be able to give currency to the player for quests mentioned in 3.7
+2.7.   When the player presses Space, the player shall attack in that direction.
 ------------------------------------------------------------------------------------------------------------------------------------------
-4.      Enemy NPCs
-4.1.   The bad NPCs shall spawn randomly throughout the map.
-4.2.   The bad NPCs shall move randomly one block at a time throughout the map.
-4.3.   The bad NPCs shall track the player within a certain radius.
-4.4.   The bad NPC shall be able to move toward the player.
-4.4.1.The bad NPC shall find the quickest path to the user when they are detected within the radius mentioned in 4.3
-4.5.   The bad NPC shall be able to attack the player.
-4.6.   The bad NPC shall have a health bar.
-4.7.   The bad NPCs shall increase in difficulty as the player moves through the world.
-4.7.1.The bad NPCs shall increase in health as the player progresses.
-4.7.2.The bad NPCs shall increase the damage done to the player as the player progresses.
-4.8.   The enemy NPCs shall drop items upon being defeated.
+3.      Enemy NPCs
+3.1.   The bad NPCs shall spawn randomly throughout the map.
+3.2.   The bad NPCs shall move randomly one block at a time throughout the map.
+3.3.   The bad NPCs shall track the player within a certain radius.
+3.4.   The bad NPC shall be able to move toward the player.
+3.4.1. The bad NPC shall find the quickest path to the user when they are detected within the radius mentioned in 3.3
+3.5.   The bad NPC shall be able to attack the player.
+3.6.   The bad NPC shall have a health bar.
 ------------------------------------------------------------------------------------------------------------------------------------------
-5.      World
-5.1.   The world shall have procedural generation for generating the map.
-5.2.   The world shall spawn friendly NPC to randomly roam the world.
-5.3.   The world shall spawn enemy NPCs to randomly roam the world.
-5.4.   The world shall randomly spawn item drops for the player to pick up.
-5.5.   The world shall generate few amounts of upgrade stations for the player to upgrade their weapon.
+4.      World
+4.1.   The world shall have procedural generation for generating the map.
+4.3.   The world shall spawn enemy NPCs to randomly roam the world.
+4.4.   The world shall randomly spawn item drops for the player to pick up.
 ------------------------------------------------------------------------------------------------------------------------------------------
-6.      Items
-6.1.   Items shall spawn randomly throughout the world.
-6.1.1. Health Packs shall be one of the items to spawn in the world.
-6.1.2. Coins shall be one of the items to spawn in the world.
+5.      Items
+5.1.   Items shall spawn randomly throughout the world.
+5.1.1. Health Packs shall be one of the items to spawn in the world.
 
